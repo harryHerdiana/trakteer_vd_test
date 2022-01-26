@@ -1,0 +1,100 @@
+//Variables
+
+$greyColor:#949494;
+$lightGreyColor:#E7E7E7
+;
+
+$largeFont:1.5rem;
+$mediumFont:0.9rem;
+$smallFont:0.75rem;
+
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-height: 260px;
+  margin: 10px;
+  background: lightblue;
+  overflow: hidden;
+  @media screen and (min-width:400px){
+    width: 320px;
+    margin: 40px;
+  }
+  img{
+    object-fit:cover;
+    width: auto;
+    height: 100%;
+    max-height: 14vh;
+  }
+}
+
+.card_text{
+  padding: 10px;
+}
+
+.thinText{
+  font-weight:400;
+  color: $greyColor;
+  font-size: $smallFont;
+}
+
+.boldText{
+  font-weight: 700;
+}
+
+.smallText{
+  font-size: $smallFont;
+}
+
+.medText{
+  font-size: $mediumFont;
+}
+
+.flexRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.social_list{
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.social_circle{
+  background-color: $lightGreyColor;
+  align-items: center;
+  display: flex;
+ padding: 4px;
+ margin: 10px 5px 10px 5px;
+ border-radius: 100%;
+}
